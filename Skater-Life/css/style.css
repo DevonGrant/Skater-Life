@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "skaterDudes";
+    src: url("../fonts/SKATERDUDES.ttf") format("truetype"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100vw;
+}
+
+body{
+    background-color: #222222;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    background-color: #222222;
+    padding-top: .1%;
+}
+
+h1{
+    grid-area: header;
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 500%;
+    font-family: "skaterDudes";
+    background-color: #222222;
+}
+
+#main{
+    grid-area: main;
+    color:  #222222;
+    font-size: 300%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
